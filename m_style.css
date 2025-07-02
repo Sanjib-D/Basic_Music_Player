@@ -4,21 +4,20 @@
 }
 
 body {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin:  50px 50px 50px 50px;
   height: 100vh;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-  position: sticky;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
   background-color: #b4b4a26e;
 }
 
+
 .main-box {
   display: flex;
   margin: 6px;
-  flex-direction: row;
   border: 1px solid #f1f1f1;
   background-size: 50% auto;
   background-size: cover;
@@ -26,7 +25,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 380px;
-  justify-content:last baseline;
+  justify-content: last baseline;
   align-items: center;
   box-shadow: 2px 2px 100px 1px rgb(173, 196, 168);
 }
@@ -60,4 +59,11 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media only screen and (max-width:720px) {
+  body {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
